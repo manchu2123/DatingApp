@@ -25,9 +25,6 @@ login()
   this.accountSevice.login(this.model).subscribe(response=>{
     this.router.navigateByUrl('/members');
     console.log(response);
-  },error=>{
-console.log(error);
-this.toastr.error(error.error);
   });
 }
 logout(){
